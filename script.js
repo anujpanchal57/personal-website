@@ -13,6 +13,7 @@ const heroImageSources = [
   "0C0A7430.jpeg",
   "1000053378.jpg",
   "IMG_0761.png",
+  "IMG_9457.JPG"
 ];
 
 // const linkedInPosts = [
