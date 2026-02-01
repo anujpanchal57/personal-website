@@ -10,10 +10,10 @@ const smoothScrollLinks = document.querySelectorAll('a[href^="#"]:not([href="#"]
 
 const heroImageSources = [
   // Replace these with your own hosted hero images
-  "0C0A7430.jpeg",
-  "1000053378.jpg",
-  "IMG_0761.png",
-  "IMG_9457.JPG"
+  "assets/0C0A7430.jpeg",
+  "assets/1000053378.jpg",
+  "assets/IMG_0761.png",
+  "assets/IMG_9457.JPG"
 ];
 
 // const linkedInPosts = [
