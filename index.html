@@ -9,6 +9,8 @@
   <!-- Primary Meta Tags -->
   <meta name="description"
     content="I architect cloud-native systems and lead engineering teams to ship transformative software. Explore my journey, projects and blogs that I published." />
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' https:; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline';">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
@@ -41,7 +43,7 @@
 <body>
   <nav class="nav">
     <div class="brand">
-      <img src="assets/logo.png" alt="Anuj Panchal Logo" class="nav-logo" />
+      <img src="assets/logo.png" alt="Anuj Panchal Logo" class="nav-logo" width="48" height="48" />
       Anuj Panchal
     </div>
     <ul class="nav-links">
@@ -76,6 +78,24 @@
   </header>
 
   <main>
+    <section class="panel highlights-section">
+      <div class="grid three highlights-grid">
+        <div class="highlight-item">
+          <h3 class="highlight-number" id="exp-counter">...</h3>
+          <p>Years of Experience</p>
+        </div>
+        <div class="highlight-item">
+          <h3 class="highlight-number">30k+</h3>
+          <p>Developers Reached on <a href="https://stackoverflow.com/users/13320357/anuj-panchal" target="_blank"
+              rel="noreferrer" style="text-decoration: underline; color: #f7a664">StackOverflow</a></p>
+        </div>
+        <div class="highlight-item">
+          <h3 class="highlight-number">0-100 Cr</h3>
+          <p>Revenue Scale Delivered (INR)</p>
+        </div>
+      </div>
+    </section>
+
     <section class="panel" id="achievements">
       <div class="section-header">
         <p class="eyebrow">Highlights</p>
@@ -111,7 +131,8 @@
         </article>
         <article class="card">
           <div class="card-image">
-            <img src="assets/certifications/from-relational-model-sql-to-mongodb-s-document-mod.png" alt="" loading="lazy" />
+            <img src="assets/certifications/from-relational-model-sql-to-mongodb-s-document-mod.png" alt=""
+              loading="lazy" />
           </div>
           <div class="card-content">
             <h3>From Relational Model (SQL) to MongoDB's Document Model</h3>
@@ -210,7 +231,10 @@
             <div class="card-body">
               <h3>Announcing support for Kinesis Data Streams in MongoDB Atlas Stream Processing</h3>
               <p>
-                Historically, syncing AWS Kinesis Data Streams with MongoDB Atlas required complex custom code and constant maintenance. MongoDB Atlas Stream Processing now eliminates this friction with a native Kinesis integration, allowing users to effortlessly stream, enrich, and analyze real-time data from IoT, logs, and applications.
+                Historically, syncing AWS Kinesis Data Streams with MongoDB Atlas required complex custom code and
+                constant maintenance. MongoDB Atlas Stream Processing now eliminates this friction with a native Kinesis
+                integration, allowing users to effortlessly stream, enrich, and analyze real-time data from IoT, logs,
+                and applications.
               </p>
             </div>
             <div class="card-footer">

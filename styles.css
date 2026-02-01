@@ -496,3 +496,45 @@ h1 {
     scroll-behavior: auto !important;
   }
 }
+
+/* Highlights Section */
+.highlights-section {
+  padding-bottom: 0;
+}
+
+.highlight-item {
+  text-align: center;
+  background: var(--card-alt);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.highlight-item:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+.highlight-number {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 0.5rem;
+  line-height: 1.1;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.highlight-item p {
+  color: var(--muted);
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}

@@ -12,7 +12,7 @@ const heroImageSources = [
   // Replace these with your own hosted hero images
   "assets/0C0A7430.jpeg",
   "assets/1000053378.jpg",
-  "assets/IMG_0761.png",
+  "assets/IMG_0761.jpg",
   "assets/IMG_9457.JPG"
 ];
 
@@ -203,4 +203,15 @@ initHeroCarousel();
 
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
+}
+
+const expCounter = document.getElementById("exp-counter");
+if (expCounter) {
+  const startYear = 2017;
+  const currentYear = new Date().getFullYear();
+  // If user hasn't reached work anniversary yet, maybe subtract 1? 
+  // But generally "2017 to Present" implies simple subtraction for "years of experience" in resume context usually.
+  // Example: 2025 - 2017 = 8 years.
+  const experience = currentYear - startYear;
+  expCounter.textContent = `${experience}+`;
 }
