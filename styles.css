@@ -396,13 +396,15 @@ h1 {
 
 .carousel-control {
   background: none;
-  border: 1px solid var(--border);
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
+  border: none;
+  width: auto;
+  height: auto;
   color: var(--text);
-  font-size: 1.5rem;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
 .carousel-control:hover {
@@ -537,4 +539,74 @@ h1 {
   margin: 0;
   font-size: 1rem;
   font-weight: 500;
+}
+
+/* Projects & Achievements Carousel Adjustments */
+.projects-carousel .carousel-track,
+.achievements-carousel .carousel-track {
+  gap: 2rem;
+  padding: 1rem 0;
+  /* Add vertical padding for shadow/hover effects */
+}
+
+.projects-carousel .card.project,
+.achievements-carousel .card {
+  flex: 0 0 350px;
+  /* Fixed width for project cards in carousel */
+  min-width: 300px;
+  max-width: 90vw;
+}
+
+.projects-carousel .carousel-control,
+.achievements-carousel .carousel-control {
+  background: none;
+  /* No background */
+  box-shadow: none;
+  /* No shadow */
+  border: none;
+  z-index: 10;
+  flex-shrink: 0;
+  padding: 0;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.projects-carousel .carousel-control svg,
+.achievements-carousel .carousel-control svg {
+  width: 48px;
+  /* Bigger size */
+  height: 48px;
+}
+
+.projects-carousel .carousel-control:hover,
+.achievements-carousel .carousel-control:hover {
+  transform: scale(1.1);
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+
+  .projects-carousel .card.project,
+  .achievements-carousel .card {
+    flex: 0 0 85%;
+    min-width: 280px;
+  }
+
+  .projects-carousel .carousel-control,
+  .achievements-carousel .carousel-control {
+    display: none;
+    /* Hide arrows on mobile, rely on touch swipe */
+  }
+
+  /* Ensure track is scrollable on mobile even without buttons */
+  .projects-carousel .carousel-track,
+  .achievements-carousel .carousel-track {
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .projects-carousel .carousel-track::-webkit-scrollbar,
+  .achievements-carousel .carousel-track::-webkit-scrollbar {
+    display: none;
+  }
 }

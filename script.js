@@ -142,6 +142,7 @@ const initHeroCarousel = () => {
 };
 
 const scrollCarousel = (direction) => {
+  // Deprecated global function, keeping for safety if called elsewhere, but logic moved to setupCarouselButtons
   if (!carouselTrack) return;
   const card = carouselTrack.querySelector(".carousel-card");
   if (!card) return;
@@ -190,13 +191,38 @@ smoothScrollLinks.forEach((link) => {
   });
 });
 
-if (prevButton) {
-  prevButton.addEventListener("click", () => scrollCarousel(-1));
-}
+// General carousel scrolling logic
+const setupCarouselButtons = () => {
+  const prevButtons = document.querySelectorAll(".carousel-control.prev");
+  const nextButtons = document.querySelectorAll(".carousel-control.next");
 
-if (nextButton) {
-  nextButton.addEventListener("click", () => scrollCarousel(1));
-}
+  prevButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const carousel = btn.closest(".carousel");
+      const track = carousel.querySelector(".carousel-track");
+      // Look for first direct child card to determine width, or just scroll by a fixed amount
+      const card = track.querySelector(".card, .carousel-card");
+      if (track && card) {
+        const scrollAmount = card.offsetWidth + 16; // width + gap (approx)
+        track.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+      }
+    });
+  });
+
+  nextButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const carousel = btn.closest(".carousel");
+      const track = carousel.querySelector(".carousel-track");
+      const card = track.querySelector(".card, .carousel-card");
+      if (track && card) {
+        const scrollAmount = card.offsetWidth + 16;
+        track.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      }
+    });
+  });
+};
+
+setupCarouselButtons();
 
 // renderPosts();
 initHeroCarousel();
