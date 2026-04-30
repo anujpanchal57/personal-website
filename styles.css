@@ -422,14 +422,21 @@ h1 {
   border-radius: 1rem;
   padding: 2rem;
   border: 1px solid var(--border);
-  max-width: 640px;
+  max-width: 900px;
 }
 
 .contact-links {
   margin-top: 1.5rem;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  flex-wrap: nowrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.contact-links .btn {
+  padding: 0.75rem 1.1rem;
+  font-size: 0.875rem;
+  white-space: nowrap;
 }
 
 .linkedin-link {
