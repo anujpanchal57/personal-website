@@ -428,7 +428,7 @@ h1 {
 .contact-links {
   margin-top: 1.5rem;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 0.75rem;
   align-items: center;
 }
@@ -491,6 +491,16 @@ h1 {
 
   .carousel-card {
     flex-basis: 80%;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-links .btn {
+    text-align: center;
+    white-space: normal;
   }
 }
 
