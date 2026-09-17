@@ -13,7 +13,14 @@ const heroImageSources = [
   "assets/0C0A7430.jpeg",
   "assets/1000053378.jpg",
   "assets/IMG_0761.jpg",
-  "assets/IMG_9457.JPG"
+  "assets/IMG_9457.JPG",
+  "assets/IMG_3684.jpg",
+  "assets/IMG_4132.jpg",
+  "assets/P4_08456.jpg",
+  "assets/P4_08482.jpg",
+  "assets/P4_08495.jpg",
+  "assets/XYZ00928.jpg",
+  "assets/XYZ01000.jpg"
 ];
 
 // const linkedInPosts = [
