@@ -560,14 +560,16 @@ h1 {
 
 /* Projects & Achievements Carousel Adjustments */
 .projects-carousel .carousel-track,
-.achievements-carousel .carousel-track {
+.achievements-carousel .carousel-track,
+.posts-carousel .carousel-track {
   gap: 2rem;
   padding: 1rem 0;
   /* Add vertical padding for shadow/hover effects */
 }
 
 .projects-carousel .card.project,
-.achievements-carousel .card {
+.achievements-carousel .card,
+.posts-carousel .card {
   flex: 0 0 350px;
   /* Fixed width for project cards in carousel */
   min-width: 300px;
@@ -575,7 +577,8 @@ h1 {
 }
 
 .projects-carousel .carousel-control,
-.achievements-carousel .carousel-control {
+.achievements-carousel .carousel-control,
+.posts-carousel .carousel-control {
   background: none;
   /* No background */
   box-shadow: none;
@@ -588,14 +591,16 @@ h1 {
 }
 
 .projects-carousel .carousel-control svg,
-.achievements-carousel .carousel-control svg {
+.achievements-carousel .carousel-control svg,
+.posts-carousel .carousel-control svg {
   width: 48px;
   /* Bigger size */
   height: 48px;
 }
 
 .projects-carousel .carousel-control:hover,
-.achievements-carousel .carousel-control:hover {
+.achievements-carousel .carousel-control:hover,
+.posts-carousel .carousel-control:hover {
   transform: scale(1.1);
   color: var(--accent);
 }
@@ -603,27 +608,45 @@ h1 {
 @media (max-width: 768px) {
 
   .projects-carousel .card.project,
-  .achievements-carousel .card {
+  .achievements-carousel .card,
+  .posts-carousel .card {
     flex: 0 0 85%;
     min-width: 280px;
   }
 
   .projects-carousel .carousel-control,
-  .achievements-carousel .carousel-control {
+  .achievements-carousel .carousel-control,
+  .posts-carousel .carousel-control {
     display: none;
     /* Hide arrows on mobile, rely on touch swipe */
   }
 
   /* Ensure track is scrollable on mobile even without buttons */
   .projects-carousel .carousel-track,
-  .achievements-carousel .carousel-track {
+  .achievements-carousel .carousel-track,
+  .posts-carousel .carousel-track {
     overflow-x: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
 
   .projects-carousel .carousel-track::-webkit-scrollbar,
-  .achievements-carousel .carousel-track::-webkit-scrollbar {
+  .achievements-carousel .carousel-track::-webkit-scrollbar,
+  .posts-carousel .carousel-track::-webkit-scrollbar {
     display: none;
   }
+}
+
+.posts-carousel .card {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.posts-carousel .card iframe {
+  width: 100%;
+  height: 627px;
+  /* ponytail: one fixed height; longer posts scroll inside the frame */
+  border: none;
+  display: block;
 }
