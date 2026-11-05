@@ -1,0 +1,42 @@
+# Anuj Panchal
+
+> Partner Solutions Architect at MongoDB. Builds agentic AI, RAG and cloud-native systems on AWS and MongoDB Atlas. Previously Principal Engineer at Exportify, leading a team of 10 developers.
+
+## Profile
+
+- [Website](https://anujpanchal.in/): portfolio, projects, certifications and contact
+- [LinkedIn](https://www.linkedin.com/in/anuj-panchal)
+- [StackOverflow](https://stackoverflow.com/users/13320357/anuj-panchal): answers reaching 30k+ developers
+- [Blog](https://blog.anujpanchal.in)
+- [CV](https://docs.google.com/document/d/1aQSdHU67Q_F3TkZuNed834JySxaCHQXob-6tOEYsW-c/edit?usp=sharing)
+
+## Experience
+
+- Partner Solutions Architect, MongoDB (2024 – present): integrations between MongoDB and AWS
+- Principal Engineer, Exportify (2022 – 2024): Air Exports/Imports platform handling USD 10M in shipments; led 10 developers
+- Senior Software Engineer, Exportify (2019 – 2022): Python/Flask, MongoDB Atlas, AWS
+- Software Engineer, Exportify (2018 – 2019)
+
+## Selected work
+
+- [MongoDB Virtual Filesystem adapter for LangChain DeepAgents](https://github.com/langchain-ai/langchain-mongodb/tree/main/libs/langchain-mongodb-deepagents-vfs)
+- [Context engineering for agentic apps on AWS Bedrock AgentCore and MongoDB Atlas](https://www.mongodb.com/company/blog/technical/context-engineering-for-agentic-applications-on-aws-bedrock-agentcore-atlas)
+- [MongoDB Power in Kiro](https://github.com/mongodb-partners/mongodb-kiro-power)
+- [Deploying MongoDB MCP Server on AWS Bedrock AgentCore](https://builder.aws.com/content/3CSKptBFUjmPjRvL6B2l9OuCC0u/deploying-mongodb-mcp-server-on-aws-bedrock-agentcore)
+- [Kinesis Data Streams support in MongoDB Atlas Stream Processing](https://www.mongodb.com/company/blog/technical/announcing-kinesis-support-for-mongodb-atlas-stream-processing)
+- [Hybrid search on Amazon Bedrock Knowledge Base with MongoDB Atlas](https://www.mongodb.com/docs/atlas/ai-integrations/amazon-bedrock/hybrid-search/)
+- [AWS landing zone with MongoDB Atlas](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/build-aws-landing-zone-that-includes-mongodb-atlas.html)
+
+## Skills
+
+Solutions architecture, generative AI, agentic AI, RAG, vector search, MongoDB Atlas, AWS (Bedrock, AgentCore, Kinesis, Glue, AppSync), LangChain, Model Context Protocol, Python, data modeling.
+
+## Certifications
+
+AWS Certified AI Practitioner (AIF-C01); MongoDB Certified Developer, Associate (C100DEV); plus 13 MongoDB skill badges covering AI agents, vector search, memory for AI apps, schema design, sharding, security and encryption.
+
+## Education
+
+- PG Certification in Product Management, Duke University (2021)
+- PG Diploma in Data Science, IIIT Bangalore (2019)
+- B.E. in Computer Science, K.J. Somaiya Institute of Technology (2017)
